@@ -83,8 +83,8 @@ public class Deck <T> where T: Card
     {
         if(IsEmpty)
         {
-            Debug.LogWarning("Deck is empty! Re-shuffling.");
-            Shuffle();
+            Debug.LogWarning("Deck is empty!");
+            return default;
         }
         int targetIndex = GetIndexFromPosition(position);
 
