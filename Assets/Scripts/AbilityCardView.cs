@@ -5,9 +5,9 @@ using UnityEngine.UI;
 
 public class AbilityCardView : MonoBehaviour
 {
-    [SerializeField] Text nameTextUI = null;
-    [SerializeField] Text costTextUI = null;
-    [SerializeField] Image graphicUI = null;
+    public Text nameTextUI = null;
+    public Text costTextUI = null;
+    public Image graphicUI = null;
 
     public void Display(AbilityCard abilityCard)
     {

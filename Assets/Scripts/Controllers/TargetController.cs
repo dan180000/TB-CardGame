@@ -6,18 +6,26 @@ public class TargetController : MonoBehaviour
 {
     public static ITargetable CurrentTarget;
     [SerializeField] Creature objectToTarget = null;
+    public DeckTester deckTesterObject;
 
     private void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1))
         {
-            ITargetable possibleTarget = objectToTarget.GetComponent<ITargetable>();
-            if(possibleTarget != null)
-            {
-                Debug.Log("New target acquired!");
-                CurrentTarget = possibleTarget;
-                objectToTarget.Target();
-            }
+            TargetEntity();
+        }
+    }
+
+    public void TargetEntity()
+    {
+        ITargetable possibleTarget = objectToTarget.GetComponent<ITargetable>();
+        DeckTester DT = deckTesterObject.GetComponent<DeckTester>();
+        if (possibleTarget != null)
+        {
+            Debug.Log("New target acquired!");
+            CurrentTarget = possibleTarget;
+            DT.Enemy = GameObject.FindGameObjectWithTag("Enemy");
+            objectToTarget.Target();
         }
     }
 }

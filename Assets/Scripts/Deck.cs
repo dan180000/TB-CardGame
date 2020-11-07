@@ -5,6 +5,7 @@ using System;
 
 public class Deck <T> where T: Card
 {
+
     List<T> cards = new List<T>();
 
     public event Action Emptied = delegate { };
@@ -50,7 +51,7 @@ public class Deck <T> where T: Card
         {
             newPositionIndex = 0;
         }
-
+       
         return newPositionIndex;
     }
 
@@ -85,6 +86,7 @@ public class Deck <T> where T: Card
         {
             Debug.LogWarning("Deck is empty!");
             return default;
+            
         }
         int targetIndex = GetIndexFromPosition(position);
 
