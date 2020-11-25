@@ -1303,7 +1303,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 222.6, y: 254}
+  m_AnchoredPosition: {x: 384, y: 422}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &539535901
@@ -1572,9 +1572,7 @@ MonoBehaviour:
   PlayerTurnText: {fileID: 1220728231}
   PlayerUsedText: {fileID: 835889537}
   PlayerHurtPS: {fileID: 1832812198}
-  PlayerBlockPS: {fileID: 1155995120}
   IsDoingPlayerHurtPS: 0
-  IsDoingPlayerBlockPS: 0
 --- !u!4 &652615740
 Transform:
   m_ObjectHideFlags: 0
@@ -1611,9 +1609,7 @@ MonoBehaviour:
   PunchSound: {fileID: 8300000, guid: 1324147f9632fdf43b0c694f606b148c, type: 3}
   BlockSound: {fileID: 8300000, guid: 9c0e3009254e4444dbff9d4865439507, type: 3}
   EnemyHurtPS: {fileID: 834096441}
-  EnemyBlockPS: {fileID: 1853891095}
   IsDoingEnemyHurtPS: 0
-  IsDoingEnemyBlockPS: 0
   AlreadyChoseRandomNumber: 0
 --- !u!82 &652615742
 AudioSource:
@@ -7001,7 +6997,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -272.3, y: 86.8}
+  m_AnchoredPosition: {x: -543, y: 48}
   m_SizeDelta: {x: 900, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &835889537
@@ -7563,7 +7559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -238, y: 336}
+  m_AnchoredPosition: {x: -419, y: 518}
   m_SizeDelta: {x: 900, y: 235.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &940377582
@@ -13404,7 +13400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 879, y: 61}
+  m_AnchoredPosition: {x: 996, y: 61}
   m_SizeDelta: {x: 900, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1334135220
@@ -25182,7 +25178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 230, y: 336}
+  m_AnchoredPosition: {x: 387, y: 520}
   m_SizeDelta: {x: 900, y: 235.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1875708572
