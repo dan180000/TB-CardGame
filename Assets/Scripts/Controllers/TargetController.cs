@@ -7,6 +7,7 @@ public class TargetController : MonoBehaviour
     public static ITargetable CurrentTarget;
     [SerializeField] Creature objectToTarget = null;
     public DeckTester deckTesterObject;
+    public GameObject TargetIcon;
 
     private void Update()
     {
@@ -24,6 +25,7 @@ public class TargetController : MonoBehaviour
         {
             Debug.Log("New target acquired!");
             CurrentTarget = possibleTarget;
+            TargetIcon.SetActive(true);
             DT.Enemy = GameObject.FindGameObjectWithTag("Enemy");
             objectToTarget.Target();
         }
